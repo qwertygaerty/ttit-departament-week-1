@@ -1,0 +1,622 @@
+@import url('https://fonts.cdnfonts.com/css/montserrat');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333333;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    padding: 17px 30px;
+    height: 48px;
+    background: #FB9475;
+    border-radius: 24px;
+    width: fit-content;
+    color: white;
+    transition: background-color .3s;
+    border: none;
+}
+
+.header__button:hover {
+    background-color: #00BF78;
+}
+
+.header {
+    background-image: url("../img/header_background.png");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.header__wrapper, .main-wrapper {
+    width: 77.08%;
+}
+
+.header__top {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 1.5rem;
+    align-items: center;
+}
+
+.header__top .header__logo .header__logo-title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+}
+
+.header__top .header__navigation {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.header__top .header__navigation li a {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+}
+
+.header__navigation-link {
+    transition: color .3s;
+}
+
+.header__navigation-link:hover {
+    color: #00BF78;
+}
+
+.header__contact {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-end;
+    margin-top: 1.5rem;
+}
+
+.header__contact-phone {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 14px;
+}
+
+.header__contact-time {
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 14px;
+    text-align: right;
+}
+
+.header__hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__content {
+    display: flex;
+    flex-direction: column;
+    width: 33.75rem;
+    gap: 3.7rem;
+}
+
+.header__title {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 59px;
+}
+
+.header__image img {
+    background: bottom url("../img/ellipse.png") no-repeat;
+    transition: filter .3s;
+}
+
+.header__image img:hover {
+    filter: invert(1);
+}
+
+
+.header__description {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.header__text-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.header__social-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.header__icon {
+    width: 1.75rem;
+}
+
+.title {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 59px;
+    margin-top: 5.875rem;
+    margin-bottom: 2rem;
+
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about__description {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    width: 538.46px;
+}
+
+.about__description-text {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0;
+}
+
+.about__description-text_small {
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.features {
+    display: flex;
+    gap: 6.53125rem;
+    margin-top: 6.355625rem;
+}
+
+.features__feature {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 21.875rem;
+    text-align: center;
+
+}
+
+.features__feature-image {
+    margin-bottom: 2.05rem;
+    height: 2.695625rem;
+}
+
+.features__feature-title {
+    padding-bottom: 0.75rem;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+}
+
+.features__feature-description {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.875rem;
+}
+
+.services__service {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    width: 30%;
+}
+
+.prices {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-bottom: 6.5rem;
+}
+
+.prices__tabs {
+    display: flex;
+    gap: 1.75rem;
+}
+
+.prices__tab {
+    position: relative;
+    width: fit-content;
+    padding-bottom: 6px;
+}
+
+.prices__tab_selected {
+    color: #00BF78;
+}
+
+.prices__tab_selected::before {
+    content: '';
+    width: 100%;
+    background-color: #00BF78;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.prices__services {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.prices__service-text-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.prices__service-title {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+}
+
+.prices__service {
+    display: flex;
+    justify-content: space-between;
+    width: 27.7575rem;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+}
+
+.prices__service:nth-child(2n) {
+    margin-left: 7.91375rem;
+}
+
+.prices__service-price {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #00BF78;
+}
+
+.masters {
+    background: #F8F6F7;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.masters__description {
+    margin-bottom: 1.5rem;
+}
+
+.masters__portfolio {
+    display: flex;
+    gap: 1.875rem;
+}
+
+.masters__master {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.masters__master-description {
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+}
+
+.masters__master-experience {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 15px;
+    letter-spacing: 0;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+
+.our-work {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 6.5rem;
+}
+
+.our-work__header-arrow_right {
+    transform: rotate(180deg);
+}
+
+.our-work__header-arrow {
+    border-radius: 4rem;
+    transition: background-color .3s;
+}
+
+.our-work__header-arrow:hover {
+    background-color: #F8F6F7;
+}
+
+.our-work__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.our-work__header-arrows {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 5.875rem;
+    margin-bottom: 2rem;
+}
+
+.our-work__slider {
+    display: flex;
+    gap: 1.8125rem;
+}
+
+.our-work__slide {
+    position: relative;
+}
+
+.our-work__slide img {
+    transition: filter .3s, transform .3s;
+}
+
+.our-work__slide-loop {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.our-work__slide-text-info {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    color: #FFFFFF;
+}
+
+.our-work__slide:hover img {
+    filter: grayscale(1);
+    transform: translate(-1rem, -1rem) !important;
+}
+
+.our-work__slide:hover img ~ .our-work__slide-loop {
+    display: flex;
+}
+
+
+.brands {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2.5rem;
+    margin-bottom: 6.5rem;
+}
+
+.brands__description {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #333333;
+}
+
+.brands__content {
+    display: flex;
+    gap: 2rem;
+}
+
+.brands__brand {
+    opacity: 0.5;
+    width: 9.92875rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background: #F8F6F7;
+}
+
+.contact .main-wrapper {
+    display: flex;
+}
+
+.contact__left, .contact__right {
+    width: 50%;
+}
+
+.contact__left {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact__contact {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contact__contact-address, .contact__contact-phone, .contact__contact-email {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.contact__contact-email {
+    color: #278AFF;
+    text-decoration: underline;
+}
+
+.contact__contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.contact__contact-social {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.contact__contact-social-description {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+}
+
+.contact__contact-social-icons {
+    display: flex;
+    gap: 1.62875rem;
+}
+
+
+.contact__form {
+    box-shadow: 0 0 10px 0 #00000026;
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    border-radius: 8px;
+    gap: 2rem;
+    width: 27.8125rem;
+    margin-bottom: 2.4875rem;
+    margin-top: 2.5125rem;
+}
+
+.contact__form-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact__form-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.contact__form-inputs .button {
+    width: 100%;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 14px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.contact__form-inputs-label  {
+    border-radius: 4px;
+
+}
+
+.contact__form-inputs-label input {
+    width: 100%;
+    height: 2.75rem;
+    padding: 0.9375rem 1rem 0.9375rem 1rem;
+    border: 1px solid #D8D8D8;
+    color: #A0A0A0;
+}
+
+.contact__form-inputs-label input::placeholder {
+    color: #A0A0A0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contact__form-policy {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 15px;
+}
+
+.contact__form-policy-link {
+    color: #278AFF;
+    text-decoration: underline;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+}
+
+.footer .main-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.25rem 0;
+}
+
+.footer__info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.footer__navigation {
+    display: flex;
+    gap: 1.75rem;
+    align-items: center;
+}
+
+.footer__navigation-link {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+}
+
+.footer__info-copyright, .footer__info-policy {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+}
+
+.footer__info-policy {
+    color: #278AFF;
+}
+
+
+
