@@ -32,7 +32,7 @@ a {
     border: none;
 }
 
-.header__button:hover {
+.button:hover {
     background-color: #00BF78;
 }
 
